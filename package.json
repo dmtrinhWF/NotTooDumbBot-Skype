@@ -1,7 +1,7 @@
 {
   "name": "nottoodumbbot-skype",
   "version": "0.0.1",
-  "description": "An improvement over the DummyBot that also uses Microsoft LUIS.",
+  "description": "An improvement over the DummyBot that also test drives Microsoft LUIS.",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/dmtrinhWF/NotTooDumbBot-Skype/issues"
   },
-  "homepage": "https://github.com/dmtrinhWF/NotTooDumbBot-Skype#readme"
+  "homepage": "https://github.com/dmtrinhWF/NotTooDumbBot-Skype#readme",
+  "dependencies": {
+    "botbuilder": "^3.2.3",
+    "https": "^1.0.0",
+    "restify": "^4.1.1"
+  }
 }
