@@ -49,7 +49,7 @@ bot.dialog('/', [
             .text("beep beep beeeeeeeeeeep!")
             .images([
                  builder.CardImage.create(session, 
-                 "http://tfwiki.net/mediawiki/images2/thumb/f/fe/Symbol_autobot_reg.png/40px-Symbol_autobot_reg.png")
+                 "http://tfwiki.net/mediawiki/images2/thumb/f/fe/Symbol_autobot_reg.png/120px-Symbol_autobot_reg.png")
             ]);
         var msg = new builder.Message(session).attachments([card]);
         session.send(msg);

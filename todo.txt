@@ -1,0 +1,6 @@
+TODO
+0. build google search calls.  Use url shortener.
+1. Create deployment script
+2. Integrate with other Bing Cognitive Services
+2. Invoke Google Custom Search REST API
+3. 
