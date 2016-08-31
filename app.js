@@ -49,7 +49,7 @@ bot.dialog('/', [
             .text("beep beep beeeeeeeeeeep!")
             .images([
                  builder.CardImage.create(session, 
-                 "https://idigitalcitizen.files.wordpress.com/2009/07/autobots-red1.jpg?w=256")
+                 "http://cdn3.iconfinder.com/data/icons/transformers/computer.png")
             ]);
         var msg = new builder.Message(session).attachments([card]);
         session.send(msg);
@@ -112,7 +112,10 @@ bot.dialog('/LUIS', intent_dialog);
 intent_dialog.onDefault([
     function (session, args, next) {
         session.send("You said: %s", session.message.text);
-        session.send("I'm sorry, I don't know how to handle this yet. Ducmeister only taught me a couple conversation skills so far. LOL");
+        session.send("I'm sorry, I don't know how to handle this yet. " +
+            "Ducmeister only taught me a couple conversation skills so far. " +
+            "Try asking about something useless like the weather or for a location.  LOL"
+        );
     }
 ]);
 
