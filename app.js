@@ -59,7 +59,7 @@ bot.dialog('/', [
             "* A simple help menu\n" +
             "* A set of global action handlers\n" +
             "* Integration with Microsoft LUIS\n so it can have basic language understanding\n\n" +
-            "The bot makes use of the ChatConnector which allows it to interface with a" +
+            "The bot makes use of the ChatConnector which allows it to interface with a " +
             "variety of channels including Skype."
         );
         session.beginDialog('/help');
@@ -156,6 +156,6 @@ intent_dialog.matches('builtin.intent.weather.check_weather', [
 intent_dialog.matches(/\b(quit|end|exit)\b/i,
     function (session, args, next) {
         // Resolve entities passed from LUIS.
-        session.endDialog("OK.  Bye!");
+        session.endDialog("OK... exiting LUIS testdrive!");
     }
 );
